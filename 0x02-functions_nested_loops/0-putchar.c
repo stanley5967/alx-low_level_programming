@@ -1,21 +1,20 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * main - prints _putchar
+ * main - Prints _putchar followed by a newline
  *
- * Description: prints _putchar
- *
- * Return: o (Success)
+ * Return: Always 0
  */
 
 int main(void)
 {
-	char text[10] = "_putchar";
-	int i = 0;
+	int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
+	int count, sz;
 
-	for (i = 0; i < 9; i++)
+	sz = sizeof(str) / sizeof(int);
+	for (count = 0; count < sz; count++)
 	{
-		_putchar(text[i]);
+		_putchar(str[count]);
 	}
 	_putchar('\n');
 
